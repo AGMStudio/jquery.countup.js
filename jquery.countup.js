@@ -1,5 +1,5 @@
 /*!
-* jquery.countup.js 1.0.2
+* jquery.countup.js 1.0.3
 *
 * Copyright 2016, Adrián Guerra Marrero http://agmstudio.io @AGMStudio_io
 * Released under the MIT License
@@ -24,11 +24,14 @@
         var $settings = settings;
 
         var counterUpper = function() {
-            var nums = [];
+            if(!$this.data('counterupTo')) {
+                $this.data('counterupTo',$this.text());
+            }
             var time = parseInt($this.data("counter-time")) > 0 ? parseInt($this.data("counter-time")) : $settings.time;
             var delay = parseInt($this.data("counter-delay")) > 0 ? parseInt($this.data("counter-delay")) : $settings.delay;
             var divisions = time / delay;
-            var num = $this.text();
+            var num = $this.data('counterupTo');
+            var nums = [num];
             var isComma = /[0-9]+,[0-9]+/.test(num);
             num = num.replace(/,/g, '');
             var isInt = /^[0-9]+$/.test(num);

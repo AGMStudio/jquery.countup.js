@@ -1,2 +1,3 @@
-# count-up
+# jquery.countup.js
+
 Jquery Counter plugin

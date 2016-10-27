@@ -39,8 +39,7 @@
             for (var i = divisions; i >= 1; i--) {
 
                 // Preserve as int if input was int
-                var newNum = parseInt(num / divisions * i);
-                console.log(parseInt(Math.round(num / divisions * i)));
+                var newNum = parseInt(Math.round(num / divisions * i));
 
                 // Preserve float if input was float
                 if (isFloat) {

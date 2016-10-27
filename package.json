@@ -1,6 +1,6 @@
 {
   "name": "jquery.countup.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jquery Counter plugin.",
   "main": "index.js",
   "scripts": {

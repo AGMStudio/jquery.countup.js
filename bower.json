@@ -1,0 +1,29 @@
+{
+  "name": "jquery.countup.js",
+  "description": "Jquery Counter plugin.",
+  "main": "index.js",
+  "authors": [
+    "Adrián Guerra Marrero"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Jquery",
+    "counter",
+    "up",
+    "count",
+    "incremental",
+    "number"
+  ],
+  "homepage": "https://github.com/AGMStudio/count-up",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "waypoints": "^4.0.1"
+  }
+}
